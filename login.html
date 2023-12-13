@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>LMS/Login</title>
+        <meta charset="utf-8">
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                background-color: #05100d;
+                font-family: "JetBrains Mono Medium", Helvetica, sans-serif;
+                display: flex;
+                width: 100%;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .wrapper{
+                border-radius: 2rem;
+                overflow: hidden;
+                display: flex;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                max-width: 1400px;
+                max-height: 1000px;
+            }
+
+            .left{
+                display: flex;
+                width: 60%;
+                background-color: #00523F;
+            }
+
+            #lms-label{
+                font-size: 3rem;
+                color: #FBFF2F;
+                font-weight: bold;
+                margin-right: 5rem;
+                margin-top: 3rem;
+            }
+
+            .wrapper_left{
+                display: flex;
+                padding-left: 6rem;
+                width: 90%;
+                gap: 2rem;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+            }
+
+            #welcome{
+                align-self: center;
+                margin-right: 5rem;
+                font-size: 3rem;
+                color: white;
+                font-weight: bold;
+            }
+
+            .wrapper_left-inputs{
+                display: flex;
+                margin-right: 5rem;
+                gap: 1.5rem;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .wrapper_left-inputs-button{
+                width: fit-content;
+            }
+
+            .input-label{
+                color: white;
+                font-size: 1rem;
+                margin-top: 1.5rem;
+                font-weight: bold;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .input{
+                max-width: fit-content;
+                margin-top: .5rem;
+                outline: none;
+                background: none;
+                color: white;
+                border: none;
+                border-bottom-style: outset;
+                border-bottom-color: #FFC42A;
+                border-bottom-width: .2rem;
+                padding: 0.2rem 8rem 0.2rem 0.5rem;
+                text-align: left;
+            }
+
+            ::placeholder {
+                color: #ffffff;
+                opacity: 1; /* Firefox */
+            }
+
+            .forgot-password{
+                margin-top: .5rem;
+                text-align: right;
+                font-weight: bold;
+                color: #14E3BE;
+                cursor: pointer;
+            }
+
+            .button{
+                width: 100%;
+                text-align: center;
+                margin-top: 1rem;
+                padding: 0.9rem 0.5rem 0.9rem 0.5rem;
+                background-color: #FFC42A;
+                color: #00523F;
+                font-size: 1rem;
+                font-weight: bold;
+                border-radius: .5rem;
+                cursor: pointer;
+                border: none;
+            }
+
+            .sing-up{
+                color: white;
+                font-weight: bold;
+                width: 100%;
+                text-align: center;
+                margin-top: 1rem;
+            }
+
+            span{
+                color: #FFC42A;
+                cursor: pointer;
+            }
+
+            .right{
+                width: 40%;
+                background-color: #FFC42A;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+
+            .right-top{
+                height: 45%;
+                background-color: #00523F;
+            }
+
+            .right-top-inside{
+                height: 100%;
+                width: 100%;
+                clip-path: polygon(100% 5%, 0 100%, 100% 100%);
+                background-color: #FFC42A;
+            }
+
+            .right-bottom{
+                height: 55%;
+                overflow: hidden;
+                padding-left: 2rem;
+                padding-bottom: 2rem;
+            }
+
+            .image{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+            }
+            
+            .image2{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                object-fit: contain;
+                width: 100px;
+                height: 200px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+       <div class="wrapper">
+            <div class="left">
+                <div>
+                    <img class="image2" alt="image2"  src="lamp.png">
+                </div>
+                <div class="wrapper_left">
+                    <div id="welcome">Welcome</div>
+                    <div class="wrapper_left-inputs">
+                        <div class="wrapper_left-inputs-button">
+                            <label class="input-label">
+                                Username
+                                <input class="input" />
+                            </label>
+                            <label class="input-label">
+                                Password
+                                <input class="input" />
+                            </label>
+                            <div class="forgot-password">Forgot Password ?</div>
+                            <button class="button">LOGIN</button>
+                            <div class="sing-up">Do not have an Account ? <span>Sing-up</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="lms-label">LMS</div>
+            </div>
+            <div class="right">
+                <div class="right-top">
+                    <div class="right-top-inside"></div>
+                </div>
+                <div class="right-bottom">
+                    <img class="image" alt="image" src="./young-man.png"/>
+                </div>
+            </div>
+       </div>
+    </body>
+</html>
